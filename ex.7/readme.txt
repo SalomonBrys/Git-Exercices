@@ -1,13 +1,15 @@
-You have worked for many hours on a feature and have regularly
-commited localy your work so you can always go back to previous states.
+You just ran a `git fetch` and realize someone has modified
+the exact file at the exact line that you just worked on.
 
-Now it is time to merge this great feature of yours into master.
+Well, it seems harmless, there's no need to polute the history.
+You don't want the world to remember the exact state of your work.
 
-As you are a good citizen, you don't want every commit named "WIP"
-(Work In Progress) to be pushed to origin, so you're going to squash
-all your commits into one.
+This time, instead of using stash like in ex.5, you are going to rebase.
 
-- Use `git rebase -i` to squash all "WIP" commits into one
-  but leave the previous commits as they are semantic.
-  Don't forget to put a comprehensible commit message.
-- Use `git pull` to merge into master.
+- Commit your changes
+- Use `git pull --rebase` to get the last version of origin/master and apply your changes.
+- Resolve the conflict in first.txt
+- Use `git rebase --continue` to finish the rebase
+- Push
+
+Can you elaborate on the differences between using stash and rebase ?

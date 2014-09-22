@@ -3,16 +3,10 @@
 source ../_generic_create.sh
 
 function _ex() {
-    touch first.txt
+    touch main.cpp
+    touch main.cpp~
     git add .
-    git commit -m "First commit"
-    echo "one" >> first.txt
-    git commit -am "Added one"
-    echo "two" >> first.txt
-    git commit -am "Added two"
-    git push
-    git reset --hard HEAD~1
-    echo "A B C D F G" >> second.txt
+    git commit -m "first commit"
 }
 
 _create _ex

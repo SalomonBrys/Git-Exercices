@@ -12,7 +12,7 @@ function _ex() {
     git commit -am "Added two"
     git push
     git reset --hard HEAD~1
-    echo "three" >> first.txt
+    echo "A B C D F G" >> second.txt
 }
 
 _create _ex

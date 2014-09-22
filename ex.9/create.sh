@@ -12,19 +12,9 @@ function _ex() {
     git commit -am "Added two"
     git push
     git reset --hard HEAD~1
-    touch second.txt
+    echo "A B C D E F" >> second.txt
     git add .
-    git commit -m "Created second.txt"
-    echo "A" >> second.txt
-    git commit -am "WIP"
-    echo "B" >> second.txt
-    echo "C" >> second.txt
-    git commit -am "WIP"
-    echo "D" >> second.txt
-    echo "E" >> second.txt
-    echo "F" >> second.txt
-    git commit -am "WIP"
+    git commit --amend -m "Added one"
 }
 
 _create _ex
-
