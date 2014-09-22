@@ -8,6 +8,10 @@ very common situations.
 
 In each folder, simply run ./create.sh and follow the guide ;)
 
+*The create script in each folder will completely reset the exercice.*  
+If you want to re-read the instructions of the exercice, just cat
+the file readme.txt.
+
 -----
 
 If you enjoyed those exercices, I strongly encourage you to look further
