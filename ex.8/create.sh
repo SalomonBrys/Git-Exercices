@@ -2,7 +2,7 @@
 
 source ../_generic_create.sh
 
-function _ex_8() {
+function _ex() {
     touch first.txt
     git add .
     git commit -m "First commit"
@@ -17,4 +17,4 @@ function _ex_8() {
     git commit --amend -m "Added one"
 }
 
-_create _ex_8
+_create _ex

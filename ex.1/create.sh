@@ -2,12 +2,12 @@
 
 source ../_generic_create.sh
 
-function _ex_1() {
+function _ex() {
     echo "un" > first.txt
     echo "deux" > second.txt
 
     git add first.txt
 }
 
-_create _ex_1
+_create _ex
 

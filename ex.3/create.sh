@@ -2,7 +2,7 @@
 
 source ../_generic_create.sh
 
-function _ex_3() {
+function _ex() {
     touch first.txt
     git add .
     git commit -m "First commit"
@@ -15,5 +15,5 @@ function _ex_3() {
     echo "A B C D F G" >> second.txt
 }
 
-_create _ex_3
+_create _ex
 

@@ -2,7 +2,7 @@
 
 source ../_generic_create.sh
 
-function _ex_7() {
+function _ex() {
     touch first.txt
     git add .
     git commit -m "First commit"
@@ -26,5 +26,5 @@ function _ex_7() {
     git commit -am "WIP"
 }
 
-_create _ex_7
+_create _ex
 

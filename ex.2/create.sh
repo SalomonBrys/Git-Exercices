@@ -2,7 +2,7 @@
 
 source ../_generic_create.sh
 
-function _ex_2() {
+function _ex() {
     touch main.cpp
     touch main.cpp~
 
@@ -12,5 +12,5 @@ function _ex_2() {
     touch out/conf.ini
 }
 
-_create _ex_2
+_create _ex
 
