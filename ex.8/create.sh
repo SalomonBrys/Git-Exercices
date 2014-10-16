@@ -10,7 +10,7 @@ function _ex() {
     git commit -am "Added one"
     echo "two" >> first.txt
     git commit -am "Added two"
-    git push
+    git push -u origin master
     git reset --hard HEAD~1
     touch second.txt
     git add .
